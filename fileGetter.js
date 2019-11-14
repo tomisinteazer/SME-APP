@@ -17,4 +17,4 @@ for (r of res) {
 }
 `);
 module.exports.inter = inter;
-console.log(module.filename);
+console.log("initial commit");
