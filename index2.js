@@ -7,5 +7,4 @@ for (r of res) {
     var pics = document.createElement("img");
     pics.setAttribute("src", re)
     document.body.appendChild(pics);
-}
-;
+};
