@@ -1,0 +1,154 @@
+body {
+    background-color: black;
+    background-image: url("cosmos.jpg");
+
+
+    /* Full height */
+
+
+    /* Center and scale the image nicely */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(0, 0, 0));
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    font-variant: small-caps;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(207, 97, 24))
+}
+
+.active {
+
+    background-image: linear-gradient(to right, rgb(4, 208, 214), hsl(346, 87%, 53%));
+
+    /* background-image: linear-gradient(to left, rgba(255, 0, 0, 0), hsl(346, 87%, 53%)); */
+}
+
+#body {
+    margin-top: 60px;
+}
+
+.center {
+    text-align: left;
+    padding-top: -120px;
+    position: absolute;
+    font-size: 80px;
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    font-variant: small-caps;
+
+    color: aliceblue;
+    padding-left: 5%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    text-decoration: overline;
+
+}
+
+.min {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+
+    text-align: left;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    color: aliceblue;
+    padding-left: 5%;
+    padding-top: 20%;
+    font-weight: lighter;
+    text-decoration: overline;
+
+
+}
+
+img {
+    border-radius: 110px;
+    position: absolute;
+    left: 75%;
+    top: 30%;
+}
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .min {
+        font-size: 30px;
+        top: 50%;
+        left: 10%
+    }
+
+    .center {
+        top: 40%;
+        left: 5%;
+        font-size: 65px;
+        color: #fff;
+    }
+
+    body {
+
+        background-image: url("copy.jpg");
+
+        background-color: #222;
+    }
+
+    img {
+
+        left: 29%;
+        top: 12%;
+    }
+
+
+}
+
+.particles-js-canvas-el {
+    position: absolute;
+}
+
+@media only screen and (max-width: 500px) {
+    .min {
+        font-size: 25px;
+        top: 50%;
+        left: 7.5%
+    }
+
+    .center {
+        top: 45%;
+        left: 3%;
+        font-size: 44px;
+        color: #fff;
+    }
+
+    img {
+
+        left: 23%;
+        top: 12%;
+    }
+}
