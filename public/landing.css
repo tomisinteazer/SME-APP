@@ -1,15 +1,12 @@
 body {
+    margin: 0;
+    padding: 0;
     background-color: black;
     background-image: url("cosmos.jpg");
 
-
-    /* Full height */
-
-
-    /* Center and scale the image nicely */
-
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 120%;
+
 }
 
 ul {
@@ -21,7 +18,7 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    font-family: Helveticla, "Trebuchet MS", Verdana, sans-serif;
     font-variant: small-caps;
 }
 
@@ -57,14 +54,16 @@ li a:hover:not(.active) {
     padding-top: -120px;
     position: absolute;
     font-size: 80px;
-    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    font-family: cursive;
     font-variant: small-caps;
 
-    color: aliceblue;
-    padding-left: 5%;
+    color: #fff;
+
+    border-bottom: 1px solid #fff;
+
     position: absolute;
     top: 25%;
-    left: 5%;
+    left: 10%;
     text-decoration: overline;
 
 }
@@ -72,14 +71,13 @@ li a:hover:not(.active) {
 .min {
     position: absolute;
     top: 25%;
-    left: 5%;
-
+    left: 10%;
+    border-bottom: 1px solid #fff;
     text-align: left;
     font-size: 50px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: cursive;
     font-variant: small-caps;
-    color: aliceblue;
-    padding-left: 5%;
+    color: #fff;
     padding-top: 20%;
     font-weight: lighter;
     text-decoration: overline;
@@ -97,19 +95,48 @@ img {
 
 
 
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1024px) {
     .min {
-        font-size: 30px;
+        font-size: 45px;
         top: 50%;
-        left: 10%
+        left: 18%
     }
 
     .center {
-        top: 40%;
-        left: 5%;
+        top: 50%;
+        left: 18%;
+        font-size: 85px;
+
+    }
+
+
+    body {
+
+        background-image: url("copy.jpg");
+
+        background-color: #222;
+    }
+
+    img {
+
+        left: 40%;
+        top: 12%;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .min {
+        font-size: 35px;
+        top: 55%;
+        left: 16%
+    }
+
+    .center {
+        top: 50%;
+        left: 15%;
         font-size: 65px;
-        color: #fff;
     }
 
     body {
@@ -121,7 +148,7 @@ img {
 
     img {
 
-        left: 29%;
+        left: 35%;
         top: 12%;
     }
 
@@ -132,23 +159,73 @@ img {
     position: absolute;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
     .min {
         font-size: 25px;
-        top: 50%;
-        left: 7.5%
+        top: 55%;
+        left: 10%
     }
 
     .center {
-        top: 45%;
-        left: 3%;
-        font-size: 44px;
-        color: #fff;
+        top: 50%;
+        left: 10%;
+        font-size: 47px;
+
     }
 
     img {
 
         left: 23%;
         top: 12%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .min {
+        font-size: 25px;
+        top: 55%;
+        left: 5%
+    }
+
+    .center {
+        top: 50%;
+        left: 7%;
+        font-size: 44px;
+
+
+    }
+
+    img {
+
+        left: 23%;
+        top: 12%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .min {
+        font-size: 20px;
+        top: 63%;
+        left: 10%
+    }
+
+    .center {
+        top: 58%;
+        left: 10%;
+        font-size: 35px;
+
+    }
+
+    img {
+        width: 50%;
+
+        left: 25%;
+        top: 20%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    li a {
+        padding: 14px 12px;
     }
 }

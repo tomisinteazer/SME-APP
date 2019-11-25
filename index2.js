@@ -1,4 +1,5 @@
-/*this the server side version of the code and much cleaner implementation */
+//this the server side version of the code and much cleaner implementation
+
 
 const images = require('./fileGetter.js');
 let res = images.inter;
