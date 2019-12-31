@@ -1,6 +1,7 @@
 body {
     background: #100933;
     margin: 0;
+    padding: 0;
 }
 
 img {
@@ -9,7 +10,6 @@ img {
     float: left;
     width: 18.99999%;
 }
-
 
 @media only screen and (max-width: 1000px) {
     img {
@@ -31,8 +31,6 @@ img {
     }
 }
 
-
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -42,7 +40,7 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    font-family: Helveticla, "Trebuchet MS", Verdana, sans-serif;
     font-variant: small-caps;
 }
 
@@ -59,16 +57,10 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(207, 97, 24))
 }
 
 .active {
-
     background-image: linear-gradient(to right, rgb(4, 208, 214), hsl(346, 87%, 53%));
-
     /* background-image: linear-gradient(to left, rgba(255, 0, 0, 0), hsl(346, 87%, 53%)); */
-}
-
-#body {
-    margin-top: 60px;
 }
