@@ -1,38 +1,22 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
+
     background-image: url("cosmos.jpg");
 
     background-repeat: no-repeat;
     background-size: 120%;
 
+
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+nav {
+
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(0, 0, 0));
-    position: fixed;
-    top: 0;
-    width: 100%;
+
+
     font-family: Helveticla, "Trebuchet MS", Verdana, sans-serif;
     font-variant: small-caps;
 }
 
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 
 li a:hover:not(.active) {
     background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(207, 97, 24))
