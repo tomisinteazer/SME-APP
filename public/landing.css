@@ -1,215 +1,205 @@
-body {
+ body,
+ html {
+     height: 100%;
+ }
 
-    background-image: url("cosmos.jpg");
+ .bg {
+     background-image: url("cosmos.jpg");
+     /* Full height */
+     height: 100%;
 
-    background-repeat: no-repeat;
-    background-size: 120%;
+     /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
 
+ nav {
 
-}
+     background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(0, 0, 0));
 
-nav {
 
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(0, 0, 0));
+     font-family: Helveticla, "Trebuchet MS", Verdana, sans-serif;
+     font-variant: small-caps;
+ }
 
 
-    font-family: Helveticla, "Trebuchet MS", Verdana, sans-serif;
-    font-variant: small-caps;
-}
+ li a:hover:not(.active) {
+     background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(207, 97, 24))
+ }
 
+ .active {
 
-li a:hover:not(.active) {
-    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(207, 97, 24))
-}
+     background-image: linear-gradient(to right, rgb(4, 208, 214), hsl(346, 87%, 53%));
 
-.active {
+     /* background-image: linear-gradient(to left, rgba(255, 0, 0, 0), hsl(346, 87%, 53%)); */
+ }
 
-    background-image: linear-gradient(to right, rgb(4, 208, 214), hsl(346, 87%, 53%));
+ #body {
+     margin-top: 60px;
+ }
 
-    /* background-image: linear-gradient(to left, rgba(255, 0, 0, 0), hsl(346, 87%, 53%)); */
-}
+ .center {
+     text-align: left;
+     padding-top: -120px;
+     position: absolute;
+     font-size: 80px;
+     font-variant: small-caps;
 
-#body {
-    margin-top: 60px;
-}
+     position: absolute;
+     top: 35%;
+     left: 10%;
 
-.center {
-    text-align: left;
-    padding-top: -120px;
-    position: absolute;
-    font-size: 80px;
-    font-family: cursive;
-    font-variant: small-caps;
 
-    color: #fff;
+ }
 
-    border-bottom: 1px solid #fff;
+ .min {
+     position: absolute;
+     top: 25%;
+     left: 10%;
 
-    position: absolute;
-    top: 25%;
-    left: 10%;
-    text-decoration: overline;
+     text-align: left;
+     font-size: 50px;
+     font-variant: small-caps;
+     color: #fff;
+     padding-top: 20%;
+     font-weight: lighter;
+     ;
 
-}
 
-.min {
-    position: absolute;
-    top: 25%;
-    left: 10%;
-    border-bottom: 1px solid #fff;
-    text-align: left;
-    font-size: 50px;
-    font-family: cursive;
-    font-variant: small-caps;
-    color: #fff;
-    padding-top: 20%;
-    font-weight: lighter;
-    text-decoration: overline;
+ }
 
+ img {
+     border-radius: 110px;
+     position: absolute;
+     left: 75%;
+     top: 30%;
+ }
 
-}
 
-img {
-    border-radius: 110px;
-    position: absolute;
-    left: 75%;
-    top: 30%;
-}
 
 
+ @media only screen and (max-width: 1024px) {
+     .min {
+         font-size: 45px;
+         top: 50%;
+         left: 18%
+     }
 
+     .center {
+         top: 50%;
+         left: 18%;
+         font-size: 85px;
 
-@media only screen and (max-width: 1024px) {
-    .min {
-        font-size: 45px;
-        top: 50%;
-        left: 18%
-    }
+     }
 
-    .center {
-        top: 50%;
-        left: 18%;
-        font-size: 85px;
 
-    }
 
 
-    body {
+     img {
 
-        background-image: url("copy.jpg");
+         left: 40%;
+         top: 12%;
+     }
 
-        background-color: #222;
-    }
 
-    img {
+ }
 
-        left: 40%;
-        top: 12%;
-    }
+ @media only screen and (max-width: 768px) {
+     .min {
+         font-size: 35px;
+         top: 55%;
+         left: 16%
+     }
 
+     .center {
+         top: 50%;
+         left: 15%;
+         font-size: 65px;
+     }
 
-}
 
-@media only screen and (max-width: 768px) {
-    .min {
-        font-size: 35px;
-        top: 55%;
-        left: 16%
-    }
 
-    .center {
-        top: 50%;
-        left: 15%;
-        font-size: 65px;
-    }
+     img {
 
-    body {
+         left: 35%;
+         top: 12%;
+     }
 
-        background-image: url("copy.jpg");
 
-        background-color: #222;
-    }
+ }
 
-    img {
+ .particles-js-canvas-el {
+     position: absolute;
+ }
 
-        left: 35%;
-        top: 12%;
-    }
+ @media only screen and (max-width: 550px) {
+     .min {
+         font-size: 25px;
+         top: 55%;
+         left: 10%
+     }
 
+     .center {
+         top: 50%;
+         left: 10%;
+         font-size: 47px;
 
-}
+     }
 
-.particles-js-canvas-el {
-    position: absolute;
-}
+     img {
 
-@media only screen and (max-width: 550px) {
-    .min {
-        font-size: 25px;
-        top: 55%;
-        left: 10%
-    }
+         left: 23%;
+         top: 12%;
+     }
+ }
 
-    .center {
-        top: 50%;
-        left: 10%;
-        font-size: 47px;
+ @media only screen and (max-width: 375px) {
+     .min {
+         font-size: 25px;
+         top: 55%;
+         left: 5%
+     }
 
-    }
+     .center {
+         top: 50%;
+         left: 7%;
+         font-size: 44px;
 
-    img {
 
-        left: 23%;
-        top: 12%;
-    }
-}
+     }
 
-@media only screen and (max-width: 375px) {
-    .min {
-        font-size: 25px;
-        top: 55%;
-        left: 5%
-    }
+     img {
 
-    .center {
-        top: 50%;
-        left: 7%;
-        font-size: 44px;
+         left: 23%;
+         top: 12%;
+     }
+ }
 
+ @media only screen and (max-width: 320px) {
+     .min {
+         font-size: 20px;
+         top: 63%;
+         left: 10%
+     }
 
-    }
+     .center {
+         top: 58%;
+         left: 10%;
+         font-size: 35px;
 
-    img {
+     }
 
-        left: 23%;
-        top: 12%;
-    }
-}
+     img {
+         width: 50%;
 
-@media only screen and (max-width: 320px) {
-    .min {
-        font-size: 20px;
-        top: 63%;
-        left: 10%
-    }
+         left: 25%;
+         top: 20%;
+     }
+ }
 
-    .center {
-        top: 58%;
-        left: 10%;
-        font-size: 35px;
-
-    }
-
-    img {
-        width: 50%;
-
-        left: 25%;
-        top: 20%;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    li a {
-        padding: 14px 12px;
-    }
-}
+ @media only screen and (max-width: 300px) {
+     li a {
+         padding: 14px 12px;
+     }
+ }

@@ -29,7 +29,7 @@ particlesJS('particles-js',
         "type": "triangle",
         "stroke": {
           "width": 1,
-          "color": "gold"
+          "color": "white"
         },
         "polygon": {
           "nb_sides": 5
@@ -51,7 +51,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 6,
+        "value": 4,
         "random": true,
         "anim": {
           "enable": false,
